@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+#navbar{
+    background-color: rgb(14, 42, 77);
+    font-family: 'Kanit', sans-serif;
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 10vh;
+    z-index: 1;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    /* border: 4px solid white; */
+    /* padding: 6px; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar ul li{
+
+    margin: 20px 70px 20px 70px;
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+ /* main section  */
+ #protein::before{
+    content: "";
+
+    background: url('/img/element5-digital-acrBf9BlfvE-unsplash.jpg') center center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.5;
+
+
+
+
+ }
+
+
+ #protein{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    /* background: url('/img/element5-digital-acrBf9BlfvE-unsplash.jpg') center center; */
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+
+
+     /* justify-content: center; */
+ }
+ #carbs::before{
+    content: "";
+    background: url('/img/jamie-street-tb5A-QTI6xg-unsplash.jpg') center center;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.8;
+
+ }
+ #carbs{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background: url('/img/jamie-street-tb5A-QTI6xg-unsplash.jpg') center center; */
+    background-size: cover;
+    flex-direction: column;
+ }
+ #fats::before{
+    content: "";
+    background: url('/img/engin-akyurt-cE-btPNQLeE-unsplash.jpg') center center;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
+
+ }
+ #fats{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background: url('/img/sven-mieke-jO6vBWX9h9Y-unsplash.jpg') center center; */
+    background-size: cover;
+ }
+
+ .protein_item{
+    position: relative;
+    right: 13%;
+    margin-top: 12vh;
+    height: 65vh;
+    /* background-color: black; */
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+
+
+ }
+ 
+ .protein_item span img{
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+    /* margin: 10px 0px 10px 0px; */
+
+ }
+.protein_item span{
+    display: block;
+    margin: 10px 0px 10px 0px;
+}
+
+/* progess bar  */
+
+.progress-bar{
+    display: inline-block;
+    /* background-color: #959595; */
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.chicken{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #e91e63;
+    animation: chicken 5s linear forwards infinite;
+    /* transition-delay: 10s; */
+}
+.paneer{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #9e05f0;
+    animation: paneer 5s linear forwards infinite;
+}
+.whey{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #00bcd4;
+    animation: whey 5s linear forwards infinite;
+}
+.fish{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #66f184;
+    animation: fish 5s linear forwards infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.egg{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #d03bea;
+    animation: egg 5s linear forwards infinite;
+}
+@keyframes chicken{
+    100%{
+        width:85%;
+
+    }
+}
+@keyframes paneer{
+    100%{
+        width:55%;
+    }
+}
+@keyframes whey{
+    100%{
+        width:75%;
+    }
+}
+@keyframes fish{
+    100%{
+        width:80%;
+    }
+}
+@keyframes egg{
+    100%{
+        width:50%;
+    }
+}
+
+/* carbs  */
+
+
+
+ .carb_item{
+    position: relative;
+    left: 17%;
+    margin-top: 12vh;
+    height: 65vh;
+    /* background-color: black; */
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+
+
+ }
+ 
+ .carb_item span img{
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+    /* margin: 10px 0px 10px 0px; */
+
+ }
+.carb_item span{
+    display: block;
+    margin: 10px 0px 10px 0px;
+}
+
+/* progess bar  */
+
+.progress-bar{
+    display: inline-block;
+    /* background-color: #959595; */
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.chicken{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #e91e63;
+    animation: chicken 5s linear forwards infinite;
+    /* transition-delay: 10s; */
+}
+.paneer{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #9e05f0;
+    animation: paneer 5s linear forwards infinite;
+}
+.whey{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #00bcd4;
+    animation: whey 5s linear forwards infinite;
+}
+.fish{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #66f184;
+    animation: fish 5s linear forwards infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.egg{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #d03bea;
+    animation: egg 5s linear forwards infinite;
+}
+@keyframes chicken{
+    100%{
+        width:85%;
+
+    }
+}
+@keyframes paneer{
+    100%{
+        width:55%;
+    }
+}
+@keyframes whey{
+    100%{
+        width:75%;
+    }
+}
+@keyframes fish{
+    100%{
+        width:80%;
+    }
+}
+@keyframes egg{
+    100%{
+        width:50%;
+    }
+}
+/* 
+carbs 
+.carbs::before{
+    content: "";
+
+    background: url('/img/element5-digital-acrBf9BlfvE-unsplash.jpg') center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+ } */
+
+/* fats  */
+ .fat_item{
+    position: relative;
+    left: 17%;
+    margin-top: 12vh;
+    height: 65vh;
+    /* background-color: black; */
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+
+
+ }
+ 
+ .fat_item span img{
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+    /* margin: 10px 0px 10px 0px; */
+
+ }
+.fat_item span{
+    display: block;
+    margin: 10px 0px 10px 0px;
+}
+
+/* progess bar  */
+
+.progress-bar{
+    display: inline-block;
+    /* background-color: #959595; */
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.chicken{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #e91e63;
+    animation: chicken 5s linear forwards infinite;
+    /* transition-delay: 10s; */
+}
+.paneer{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #9e05f0;
+    animation: paneer 5s linear forwards infinite;
+}
+.whey{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #00bcd4;
+    animation: whey 5s linear forwards infinite;
+}
+.fish{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #66f184;
+    animation: fish 5s linear forwards infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.egg{
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    background: #d03bea;
+    animation: egg 5s linear forwards infinite;
+}
+@keyframes chicken{
+    100%{
+        width:85%;
+
+    }
+}
+@keyframes paneer{
+    100%{
+        width:55%;
+    }
+}
+@keyframes whey{
+    100%{
+        width:75%;
+    }
+}
+@keyframes fish{
+    100%{
+        width:80%;
+    }
+}
+@keyframes egg{
+    100%{
+        width:50%;
+    }
+}
+
+

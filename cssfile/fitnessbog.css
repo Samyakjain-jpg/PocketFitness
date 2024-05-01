@@ -1,0 +1,56 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+
+body{
+    /* display: flex; */
+    background-image: url("/img/fitnessblog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    background-blend-mode: 0.5;
+    font-size: 1.6rem;
+    font-family: 'Kanit', sans-serif;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 80%;
+   
+}
+body a{
+    
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: aliceblue;
+
+
+
+}
+a:hover{
+    background-color: black;
+    color: white;
+
+    
+}
+p{
+    width: 40vw;
+    margin-top: 100px;
+}
+.f1{
+    position: relative;
+    /* display: inline-block; */
+    width: 45vw;
+    height: 45vh;
+    margin-top: 200px;
+    margin-left: 800px;
+}
+.s2{
+    position: absolute;
+    display: inline-block;
+    width: 45vw;
+    height: 45vh;
+}

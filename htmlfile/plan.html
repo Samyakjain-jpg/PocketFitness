@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input {
+  width: 100px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+    </style>
+    <title>Diet Plan</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <h1>Diet Plan</h1>
+    <form>
+      <label for="goal_calories">Goal Calories:</label>
+      <input type="number" id="goal_calories">
+      <br>
+      <label for="breakfast_calories">Breakfast Calories:</label>
+      <input type="number" id="breakfast_calories">
+      <br>
+      <label for="lunch_calories">Lunch Calories:</label>
+      <input type="number" id="lunch_calories">
+      <br>
+      <label for="dinner_calories">Dinner Calories:</label>
+      <input type="number" id="dinner_calories">
+      <br>
+      <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function calculate() {
+  var goal_calories = parseInt(document.getElementById("goal_calories").value);
+  var breakfast_calories = parseInt(document.getElementById("breakfast_calories").value);
+  var lunch_calories = parseInt(document.getElementById("lunch_calories").value);
+  var dinner_calories = parseInt(document.getElementById("dinner_calories").value);
+
+  var total_calories = breakfast_calories + lunch_calories + dinner_calories;
+  var remaining_calories = goal_calories - total_calories;
+
+  if (remaining_calories > 0) {
+    document.getElementById("result").innerHTML = "You have " + remaining_calories + " calories remaining.";
+  } else if (remaining_calories < 0) {
+    document.getElementById("result").innerHTML = "You have exceeded your goal by " + Math.abs(remaining_calories) + " calories.";
+  } else {
+    document.getElementById("result").innerHTML = "You have reached your goal of " + goal_calories + " calories.";
+  }
+}
+
+    </script>
+  </body>
+</html>
